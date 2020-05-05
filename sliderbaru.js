@@ -1,6 +1,6 @@
 /*
 var s3slider_config = {
-	url: 'http://dedy-linux.blogspot.com/',
+	url: 'https://osis39smeksa.blogspot.com/',
 	numPost: 6,
 	labelName: null,
 	monthArray: [
