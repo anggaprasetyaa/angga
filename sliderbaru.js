@@ -131,7 +131,7 @@ Modified by Taufik Nurrohman <http://gplus.to/tovic>
 		container = d.getElementById(sc.containerId),
 		head = d.getElementsByTagName('head')[0],
 		s = d.createElement('script'),
-		skeleton = '<div class="s3slider" id="s3slider" style="width:' + sc.slider.width + '%;height:' + sc.slider.height + 'px;"><ul class="s3slider-content">',
+		skeleton = '<div class="s3slider" id="s3slider" style="width:' + sc.slider.width + 'px;height:' + sc.slider.height + 'px;"><ul class="s3slider-content">',
 		title, image, link, date, comment;
 	w.blogger_s3Slider = function(json) {
 		var entry = json.feed.entry;
@@ -154,7 +154,7 @@ Modified by Taufik Nurrohman <http://gplus.to/tovic>
 					break;
 				}
 			}
-			skeleton += '<li><img src="' + image + '" style="display:block;width:' + sc.slider.width + '%;min-height:' + sc.slider.height + 'px;height:auto;"><span class="s3slider-caption"><span class="s3slider-title"><a href="' + link + '"' + (sc.newTabLink ? ' target="_blank"' : "") + '>' + title + '</a></span><span class="s3slider-meta"><span class="s3slider-meta-date">' + dd + ' ' + sc.monthArray[parseInt(dm, 10) - 1] + ' ' + dy + '</span><span class="s3slider-meta-comment">' + comment + '</span></span></span></li>';
+			skeleton += '<li><img src="' + image + '" style="display:block;width:' + sc.slider.width + 'px;min-height:' + sc.slider.height + 'px;height:auto;"><span class="s3slider-caption"><span class="s3slider-title"><a href="' + link + '"' + (sc.newTabLink ? ' target="_blank"' : "") + '>' + title + '</a></span><span class="s3slider-meta"><span class="s3slider-meta-date">' + dd + ' ' + sc.monthArray[parseInt(dm, 10) - 1] + ' ' + dy + '</span><span class="s3slider-meta-comment">' + comment + '</span></span></span></li>';
 		}
 		skeleton += '</ul></div>';
 		container.innerHTML = skeleton;
